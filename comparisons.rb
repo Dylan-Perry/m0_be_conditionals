@@ -22,24 +22,31 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
+number_teachers < number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
+number_teachers == string_teachers
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
+number_teachers != number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
+number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
+number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
+number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
+number_students <= 21
 # this should print: true
 
 
@@ -54,20 +61,24 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 puts 4 < 9
 #YOU DO: Explain.
+# Checking if 4 is less than 9
 
 books = 3
 puts 4 < books
 # YOU DO: Explain.
+# Checking if 4 is less than integer variable 'books' (currently 3)
 
 friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
+# Checking if integer variable 'friends' (currently 6) is less than integer variable 'siblings' (currently 2)
 
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
+# Checking if integer variable 'attendees' (currently 9) is not equal to integer variable 'meals' (currently 8)
 
 
 #-------------------
@@ -90,15 +101,16 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
+puts loves_to_play && age <= 1
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: It evaluated to "true", because the boolean variable 'loves_to_play' is currently true, and my code is checking whether the integer variable 'age' is 1 or less, which is also true.
